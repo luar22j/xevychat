@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.xevy.PrimaryController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="375.0" prefWidth="478.0" BorderPane.alignment="CENTER">
+         <children>
+            <Line endX="42.413848876953125" startX="-147.47669982910156" stroke="#2e66cf">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Line>
+            <Text fx:id="title" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrar-se">
+               <VBox.margin>
+                  <Insets bottom="50.0" top="-50.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <effect>
+                  <Reflection topOffset="5.0" />
+               </effect>
+            </Text>
+            <Label fx:id="labelpass" contentDisplay="CENTER" prefHeight="36.0" prefWidth="181.0" style="-fx-alignment: center;" text="" />
+            <TextField fx:id="nombre" maxWidth="200.0" prefWidth="2000.0" promptText="Nom d'usuari">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="correo" maxWidth="200.0" prefWidth="2000.0" promptText="Correu electrònic">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="contrasena" maxWidth="200.0" prefWidth="2000.0" promptText="Contrasenya" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Hyperlink fx:id="enlaceLogin" onAction="#login" text="Ja tens un compte?">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin></Hyperlink>
+                  <Button fx:id="primaryButton" defaultButton="true" mnemonicParsing="false" onAction="#registrarme" style="-fx-background-color: #2E66CF;" text="Registra't" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox alignment="CENTER" prefHeight="375.0" prefWidth="210.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/logofinalpng.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Line endX="-99.62991333007812" endY="621.2929077148438" startX="-100.0" stroke="#2e66cf">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Line>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+</BorderPane>

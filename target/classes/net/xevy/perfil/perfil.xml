@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<perfil>
+  <id></id>
+  <name></name>
+  <lastName></lastName>
+  <username></username>
+  <email></email>
+  <password></password>
+  <address></address>
+  <phone></phone>
+  <ip></ip>
+</perfil>
